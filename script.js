@@ -30,6 +30,20 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
+document.addEventListener("click", (event) => {
+  const target = event.target;
+  if (
+    body.classList.contains("nav-open") &&
+    target instanceof Node &&
+    !nav?.contains(target) &&
+    !navToggle?.contains(target)
+  ) {
+    body.classList.remove("nav-open");
+    navToggle?.setAttribute("aria-expanded", "false");
+    navToggle?.setAttribute("aria-label", "Abrir menu");
+  }
+});
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && body.classList.contains("nav-open")) {
     body.classList.remove("nav-open");
