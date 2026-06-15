@@ -265,7 +265,7 @@ a {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(360px, 1.05fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   align-items: center;
   gap: clamp(32px, 6vw, 72px);
   min-height: min(820px, 92svh);
@@ -293,6 +293,10 @@ a {
   position: relative;
   z-index: 1;
   min-width: 0;
+}
+
+.hero__copy {
+  max-width: 720px;
 }
 
 .brand-pill,
@@ -1002,9 +1006,11 @@ body.reveal-ready .reveal.is-visible {
 
   .hero {
     min-height: auto;
+    padding-bottom: 64px;
   }
 
   .hero__visual {
+    width: min(100%, 720px);
     max-width: 720px;
   }
 
@@ -1041,6 +1047,50 @@ body.reveal-ready .reveal.is-visible {
 
   .site-header {
     padding-inline: 16px;
+  }
+
+  .hero {
+    gap: 34px;
+    padding-top: calc(var(--header-height) + 46px);
+  }
+
+  .hero__copy {
+    max-width: 680px;
+  }
+
+  h1 {
+    max-width: 660px;
+    font-size: clamp(2.35rem, 7vw, 3.35rem);
+    line-height: 1.04;
+  }
+
+  .hero__text {
+    max-width: 620px;
+  }
+
+  .hero__indicators {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 100%;
+  }
+
+  .visual-stage {
+    min-height: 480px;
+  }
+
+  .growth-path {
+    height: 270px;
+  }
+
+  .floating-note {
+    width: min(190px, 42%);
+  }
+
+  .floating-note--left {
+    top: 274px;
+  }
+
+  .floating-note--right {
+    top: 242px;
   }
 
   .brand__logo {
@@ -1102,10 +1152,6 @@ body.reveal-ready .reveal.is-visible {
     grid-template-columns: 1fr;
   }
 
-  .visual-stage {
-    min-height: 500px;
-  }
-
   .site-footer__main {
     grid-template-columns: 1fr;
   }
@@ -1117,12 +1163,12 @@ body.reveal-ready .reveal.is-visible {
   }
 
   .hero {
-    gap: 28px;
-    padding: calc(var(--header-height) + 38px) 0 48px;
+    gap: 26px;
+    padding: calc(var(--header-height) + 34px) 0 44px;
   }
 
   h1 {
-    font-size: clamp(1.92rem, 8.3vw, 2.24rem);
+    font-size: clamp(1.9rem, 8.1vw, 2.22rem);
     line-height: 1.08;
     max-width: 100%;
   }
@@ -1146,7 +1192,6 @@ body.reveal-ready .reveal.is-visible {
     width: 100%;
   }
 
-  .hero__indicators,
   .about__matrix,
   .feature-grid,
   .timeline,
@@ -1154,41 +1199,81 @@ body.reveal-ready .reveal.is-visible {
     grid-template-columns: 1fr;
   }
 
+  .hero__indicators {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .hero__indicators article {
+    min-height: 92px;
+    padding: 14px 8px;
+  }
+
+  .hero__indicators strong {
+    margin-top: 10px;
+    font-size: 0.74rem;
+    line-height: 1.12;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .hero__indicators span {
+    font-size: 0.76rem;
+  }
+
+  .hero__indicators .ui-icon {
+    width: 21px;
+    height: 21px;
+  }
+
   .pillar-card--wide {
     grid-column: auto;
   }
 
   .visual-stage {
-    min-height: 440px;
-    padding: 22px;
+    min-height: 342px;
+    padding: 18px;
   }
 
   .visual-stage__top {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
   }
 
   .visual-stage__top span {
-    text-align: left;
+    text-align: right;
+  }
+
+  .visual-stage__top img {
+    width: 104px;
   }
 
   .growth-path {
-    height: 240px;
-    margin-top: 20px;
+    height: 194px;
+    margin-top: 16px;
+  }
+
+  .growth-node {
+    width: clamp(46px, 13vw, 56px);
+    font-size: 0.78rem;
   }
 
   .floating-note {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    width: 100%;
-    margin-top: 10px;
+    display: none;
   }
 
   .visual-steps {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    margin-top: 12px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .visual-steps span {
+    min-height: 46px;
+    padding: 0 4px;
+    font-size: 0.68rem;
   }
 
   .about,
@@ -1227,5 +1312,46 @@ body.reveal-ready .reveal.is-visible {
 
   .final-cta__logo {
     width: 136px;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-pill {
+    max-width: 100%;
+    min-height: 32px;
+    padding-inline: 10px;
+    font-size: 0.7rem;
+  }
+
+  .hero__text {
+    line-height: 1.55;
+  }
+
+  .button {
+    min-width: 0;
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__indicators {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero__indicators article {
+    min-height: 76px;
+  }
+
+  .hero__indicators article:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .visual-stage__top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .visual-stage__top span {
+    text-align: left;
   }
 }
