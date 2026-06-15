@@ -5,36 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="ASEX Educação forma profissionais, desenvolve talentos e prepara líderes para uma jornada de crescimento, aprendizado e carreira."
+      content="A ASEX Educação forma talentos, desenvolve profissionais e prepara líderes para crescerem junto com a empresa."
     />
     <meta
       name="keywords"
-      content="ASEX Educação, formação profissional, desenvolvimento de líderes, carreira, processo seletivo"
+      content="ASEX Educação, formação profissional, desenvolvimento de líderes, carreira, processo seletivo, treinamento"
     />
     <meta name="author" content="ASEX Educação" />
-    <meta property="og:title" content="ASEX Educação | Formação e carreira" />
+    <meta name="theme-color" content="#050509" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="ASEX Educação | Formação Profissional e Desenvolvimento de Líderes"
+    />
     <meta
       property="og:description"
-      content="Formando profissionais. Desenvolvendo líderes. Construindo futuros."
+      content="A ASEX Educação forma talentos, desenvolve profissionais e prepara líderes para crescerem junto com a empresa."
     />
-    <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/asex-educacao-logo.png" />
-    <title>ASEX Educação | Formação, carreira e liderança</title>
+    <title>ASEX Educação | Formação Profissional e Desenvolvimento de Líderes</title>
     <link rel="icon" type="image/png" href="assets/asex-educacao-logo.png" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-spark" viewBox="0 0 24 24">
+        <path d="M12 3v5m0 8v5M4 12h5m6 0h5" />
+        <path d="m7 7 2 2m6 6 2 2m0-10-2 2m-6 6-2 2" />
+      </symbol>
+      <symbol id="icon-growth" viewBox="0 0 24 24">
+        <path d="M4 18h16" />
+        <path d="M6 15l4-4 3 3 5-7" />
+        <path d="M15 7h3v3" />
+      </symbol>
+      <symbol id="icon-people" viewBox="0 0 24 24">
+        <path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+        <path d="M17 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+        <path d="M3.5 20a5.5 5.5 0 0 1 11 0" />
+        <path d="M14 16.5A4.5 4.5 0 0 1 20.5 20" />
+      </symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24">
+        <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" />
+        <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+        <path d="M12 12h8" />
+      </symbol>
+      <symbol id="icon-path" viewBox="0 0 24 24">
+        <path d="M5 6h6a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6h10" />
+        <path d="M16 15l3 3-3 3" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path d="M5 6h14v10H8l-3 3V6Z" />
+        <path d="M8 10h8M8 13h5" />
+      </symbol>
+    </svg>
+
     <header class="site-header" data-header>
       <a class="brand" href="#inicio" aria-label="ASEX Educação - Início">
         <img
-          src="assets/asex-educacao-logo.png"
+          src="assets/asex-educacao-logo-horizontal.png"
           alt="ASEX Educação"
           class="brand__logo"
         />
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        data-nav-toggle
+      >
         <span></span>
         <span></span>
         <span></span>
@@ -59,247 +104,291 @@
     </header>
 
     <main>
-      <section class="hero" id="inicio">
-        <div class="hero__content reveal">
-          <div class="hero__brand-card" aria-label="Identidade visual ASEX Educação">
-            <img
-              src="assets/asex-educacao-logo.png"
-              alt="ASEX Educação"
-              class="hero__logo"
-            />
-          </div>
-          <p class="eyebrow">Formação profissional e desenvolvimento humano</p>
-          <h1>Formamos profissionais para crescer junto com a ASEX Educação</h1>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero__copy reveal">
+          <span class="brand-pill">Formação • Carreira • Liderança</span>
+          <h1>Formamos talentos para crescer junto com a ASEX Educação</h1>
           <p class="hero__text">
-            A ASEX Educação desenvolve talentos, prepara líderes e oferece uma
-            jornada de formação para pessoas que desejam construir uma carreira
-            com propósito, aprendizado e crescimento.
+            Uma jornada de formação profissional para pessoas que desejam
+            aprender, evoluir e construir uma carreira com propósito.
           </p>
+
           <div class="hero__actions">
-            <a class="button button--primary" href="#sobre">Conheça a ASEX</a>
             <a
-              class="button button--ghost"
+              class="button button--primary"
               href="https://wa.me/5514998533026?text=Ol%C3%A1%2C%20quero%20participar%20do%20processo%20da%20ASEX%20Educa%C3%A7%C3%A3o."
               target="_blank"
               rel="noopener"
             >
               Quero participar do processo
             </a>
+            <a class="button button--secondary" href="#processo">Conhecer a jornada</a>
+          </div>
+
+          <div class="hero__indicators" aria-label="Indicadores da jornada">
+            <article>
+              <svg class="ui-icon"><use href="#icon-target"></use></svg>
+              <strong>Treinamento</strong>
+              <span>Base prática</span>
+            </article>
+            <article>
+              <svg class="ui-icon"><use href="#icon-people"></use></svg>
+              <strong>Desenvolvimento</strong>
+              <span>Acompanhamento</span>
+            </article>
+            <article>
+              <svg class="ui-icon"><use href="#icon-growth"></use></svg>
+              <strong>Crescimento</strong>
+              <span>Novas etapas</span>
+            </article>
           </div>
         </div>
 
-        <div class="hero__visual reveal" aria-label="Jornada de formação ASEX Educação">
-          <div class="orbit-panel">
-            <div class="orbit-panel__top">
-              <img src="assets/asex-educacao-logo.png" alt="" aria-hidden="true" />
-              <span>Trilha de crescimento</span>
+        <div class="hero__visual reveal" aria-label="Visual de crescimento profissional">
+          <div class="visual-stage">
+            <div class="visual-stage__top">
+              <img src="assets/asex-educacao-logo-horizontal.png" alt="" aria-hidden="true" />
+              <span>Trilha de evolução</span>
             </div>
-            <div class="growth-map" aria-hidden="true">
-              <span class="growth-map__line"></span>
-              <span class="growth-map__dot growth-map__dot--one"></span>
-              <span class="growth-map__dot growth-map__dot--two"></span>
-              <span class="growth-map__dot growth-map__dot--three"></span>
-              <span class="growth-map__dot growth-map__dot--four"></span>
+
+            <div class="growth-path" aria-hidden="true">
+              <span class="growth-path__rail"></span>
+              <span class="growth-node growth-node--one">01</span>
+              <span class="growth-node growth-node--two">02</span>
+              <span class="growth-node growth-node--three">03</span>
+              <span class="growth-node growth-node--four">04</span>
             </div>
-            <div class="orbit-panel__grid">
-              <article>
-                <strong>01</strong>
-                <span>Interesse</span>
-              </article>
-              <article>
-                <strong>02</strong>
-                <span>Treinamento</span>
-              </article>
-              <article>
-                <strong>03</strong>
-                <span>Prática</span>
-              </article>
-              <article>
-                <strong>04</strong>
-                <span>Liderança</span>
-              </article>
+
+            <div class="floating-note floating-note--left">
+              <span>Aprendizado</span>
+              <strong>orientado na prática</strong>
+            </div>
+            <div class="floating-note floating-note--right">
+              <span>Potencial</span>
+              <strong>para liderar</strong>
+            </div>
+
+            <div class="visual-steps" aria-hidden="true">
+              <span>Interesse</span>
+              <span>Formação</span>
+              <span>Prática</span>
+              <span>Liderança</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--tight" id="sobre">
-        <div class="section__header reveal">
-          <p class="eyebrow">Sobre a ASEX Educação</p>
+      <section class="section-shell about" id="sobre">
+        <div class="section-copy reveal">
+          <span class="eyebrow">Sobre a ASEX Educação</span>
           <h2>Uma empresa criada para formar pessoas e desenvolver talentos</h2>
           <p>
-            A ASEX Educação nasceu com o objetivo de formar pessoas para atuar
-            em projetos de crescimento, desenvolvimento e liderança. Nosso foco
-            é identificar talentos, oferecer capacitação prática e construir uma
-            jornada de evolução profissional para quem deseja crescer junto com
-            a empresa.
+            A ASEX Educação nasceu para formar pessoas, desenvolver talentos e
+            preparar profissionais para novos desafios. Nossa missão é criar uma
+            jornada de aprendizado prático, acompanhamento e crescimento para
+            quem deseja evoluir junto com a empresa.
           </p>
         </div>
 
-        <div class="pillars">
-          <article class="card reveal">
-            <span class="icon-mark">F</span>
+        <div class="about__matrix">
+          <article class="pillar-card reveal">
+            <span class="number">01</span>
             <h3>Formação profissional</h3>
-            <p>Capacitação clara, prática e orientada para evolução constante.</p>
+            <p>Capacitação clara, prática e conectada à evolução de carreira.</p>
           </article>
-          <article class="card reveal">
-            <span class="icon-mark">L</span>
+          <article class="pillar-card reveal">
+            <span class="number">02</span>
             <h3>Desenvolvimento de líderes</h3>
-            <p>Preparação para assumir responsabilidades, desafios e novas etapas.</p>
+            <p>Preparação para assumir responsabilidades com maturidade.</p>
           </article>
-          <article class="card reveal">
-            <span class="icon-mark">E</span>
+          <article class="pillar-card pillar-card--wide reveal">
+            <span class="number">03</span>
             <h3>Crescimento em equipe</h3>
-            <p>Ambiente colaborativo, com aprendizado diário e visão de futuro.</p>
+            <p>
+              Uma cultura de troca, orientação e avanço constante para pessoas
+              comprometidas com a própria evolução.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="mission section" id="formacao">
-        <div class="mission__copy reveal">
-          <p class="eyebrow">Nossa missão</p>
+      <section class="section-shell mission" id="formacao">
+        <div class="mission__panel reveal">
+          <span class="eyebrow">Nossa missão</span>
           <h2>Preparar pessoas para novos desafios</h2>
           <p>
-            Nossa missão é preparar pessoas para assumirem novos desafios,
-            desenvolverem suas habilidades e construírem uma carreira sólida
-            dentro de um ambiente de aprendizado, evolução e oportunidade.
+            Nossa missão é desenvolver habilidades, fortalecer a postura
+            profissional e preparar pessoas para construírem uma carreira sólida
+            em um ambiente de aprendizado, evolução e oportunidade.
           </p>
         </div>
-        <div class="mission__cards">
-          <article class="mini-card reveal">
-            <span>01</span>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <svg class="card-icon"><use href="#icon-spark"></use></svg>
             <h3>Aprendizado contínuo</h3>
+            <p>Conteúdo, prática e repertório para evoluir com consistência.</p>
           </article>
-          <article class="mini-card reveal">
-            <span>02</span>
+          <article class="feature-card reveal">
+            <svg class="card-icon"><use href="#icon-people"></use></svg>
             <h3>Desenvolvimento pessoal</h3>
+            <p>Postura, comunicação e responsabilidade no dia a dia.</p>
           </article>
-          <article class="mini-card reveal">
-            <span>03</span>
+          <article class="feature-card reveal">
+            <svg class="card-icon"><use href="#icon-growth"></use></svg>
             <h3>Cultura de crescimento</h3>
+            <p>Um ambiente que incentiva evolução, clareza e compromisso.</p>
           </article>
-          <article class="mini-card reveal">
-            <span>04</span>
+          <article class="feature-card reveal">
+            <svg class="card-icon"><use href="#icon-target"></use></svg>
             <h3>Formação de liderança</h3>
+            <p>Preparação para orientar pessoas e assumir novos desafios.</p>
           </article>
         </div>
       </section>
 
-      <section class="section audience">
-        <div class="section__header reveal">
-          <p class="eyebrow">Para quem é</p>
-          <h2>Vontade de aprender conta tanto quanto experiência</h2>
+      <section class="section-shell audience">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Para quem é</span>
+          <h2>Essa jornada é para quem quer crescer de verdade</h2>
           <p>
             Não buscamos apenas experiência. Buscamos pessoas com vontade de
-            aprender, crescer e construir uma trajetória profissional conosco.
+            aprender, responsabilidade e disposição para construir uma trajetória
+            profissional conosco.
           </p>
         </div>
 
         <div class="audience__grid">
-          <article class="audience-item reveal">Pessoas em busca da primeira oportunidade</article>
-          <article class="audience-item reveal">Jovens que desejam crescer profissionalmente</article>
-          <article class="audience-item reveal">Profissionais em transição de carreira</article>
-          <article class="audience-item reveal">Pessoas comunicativas e comprometidas</article>
-          <article class="audience-item reveal">Quem deseja aprender uma nova atividade</article>
-          <article class="audience-item reveal">Quem busca uma carreira com desenvolvimento</article>
+          <article class="audience-card reveal">
+            <svg class="card-icon"><use href="#icon-check"></use></svg>
+            <h3>Primeira oportunidade</h3>
+          </article>
+          <article class="audience-card reveal">
+            <svg class="card-icon"><use href="#icon-growth"></use></svg>
+            <h3>Jovens em desenvolvimento</h3>
+          </article>
+          <article class="audience-card reveal">
+            <svg class="card-icon"><use href="#icon-path"></use></svg>
+            <h3>Transição de carreira</h3>
+          </article>
+          <article class="audience-card reveal">
+            <svg class="card-icon"><use href="#icon-message"></use></svg>
+            <h3>Boa comunicação</h3>
+          </article>
+          <article class="audience-card reveal">
+            <svg class="card-icon"><use href="#icon-target"></use></svg>
+            <h3>Comprometimento</h3>
+          </article>
+          <article class="audience-card reveal">
+            <svg class="card-icon"><use href="#icon-spark"></use></svg>
+            <h3>Desejo de crescimento</h3>
+          </article>
         </div>
       </section>
 
-      <section class="section timeline-section" id="processo">
-        <div class="section__header reveal">
-          <p class="eyebrow">Como funciona a jornada</p>
-          <h2>Da primeira conversa à formação de novos líderes</h2>
+      <section class="section-shell process" id="processo">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Como funciona a jornada</span>
+          <h2>Um caminho claro para aprender, praticar e evoluir</h2>
         </div>
 
         <div class="timeline">
           <article class="timeline__item reveal">
-            <span>1</span>
+            <span>01</span>
             <h3>Interesse na oportunidade</h3>
-            <p>Você demonstra interesse e conhece a proposta da ASEX Educação.</p>
+            <p>Você conhece a proposta e sinaliza que deseja participar.</p>
           </article>
           <article class="timeline__item reveal">
-            <span>2</span>
-            <h3>Entrada no processo seletivo</h3>
-            <p>Seu perfil é avaliado com clareza, respeito e alinhamento de expectativas.</p>
+            <span>02</span>
+            <h3>Processo seletivo</h3>
+            <p>Avaliamos perfil, comunicação, compromisso e alinhamento.</p>
           </article>
           <article class="timeline__item reveal">
-            <span>3</span>
+            <span>03</span>
             <h3>Apresentação da empresa</h3>
-            <p>Você entende a cultura, a jornada e as possibilidades de crescimento.</p>
+            <p>Você entende cultura, expectativas e possibilidades da jornada.</p>
           </article>
           <article class="timeline__item reveal">
-            <span>4</span>
+            <span>04</span>
             <h3>Treinamento inicial</h3>
-            <p>Conteúdos essenciais preparam você para iniciar com confiança.</p>
+            <p>Uma base prática prepara você para começar com segurança.</p>
           </article>
           <article class="timeline__item reveal">
-            <span>5</span>
+            <span>05</span>
             <h3>Desenvolvimento prático</h3>
-            <p>A aprendizagem ganha forma por meio de acompanhamento e prática.</p>
+            <p>Acompanhamento e prática transformam aprendizado em evolução.</p>
           </article>
           <article class="timeline__item reveal">
-            <span>6</span>
-            <h3>Crescimento dentro da equipe</h3>
-            <p>Cada avanço abre espaço para novas responsabilidades e experiências.</p>
+            <span>06</span>
+            <h3>Crescimento na equipe</h3>
+            <p>Novas responsabilidades surgem conforme desempenho e maturidade.</p>
           </article>
           <article class="timeline__item reveal">
-            <span>7</span>
-            <h3>Formação de novos líderes</h3>
-            <p>Pessoas preparadas passam a inspirar, orientar e desenvolver outras pessoas.</p>
+            <span>07</span>
+            <h3>Formação de liderança</h3>
+            <p>Pessoas preparadas passam a orientar e desenvolver outras pessoas.</p>
           </article>
         </div>
       </section>
 
-      <section class="section benefits">
-        <div class="section__header reveal">
-          <p class="eyebrow">O que a ASEX proporciona</p>
+      <section class="section-shell benefits">
+        <div class="section-heading reveal">
+          <span class="eyebrow">O que a ASEX proporciona</span>
           <h2>Uma base completa para evolução profissional</h2>
         </div>
 
         <div class="benefits__grid">
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-target"></use></svg>
             <h3>Treinamento especializado</h3>
             <p>Conteúdos direcionados para desenvolver competências práticas.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-people"></use></svg>
             <h3>Desenvolvimento profissional</h3>
             <p>Orientação para ampliar habilidades e postura de carreira.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-growth"></use></svg>
             <h3>Possibilidade de crescimento</h3>
             <p>Uma jornada pensada para quem quer evoluir passo a passo.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-message"></use></svg>
             <h3>Acompanhamento durante a jornada</h3>
-            <p>Feedbacks e direcionamento para apoiar o desenvolvimento.</p>
+            <p>Feedbacks e direcionamento para apoiar seu desenvolvimento.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-people"></use></svg>
             <h3>Ambiente colaborativo</h3>
-            <p>Aprendizado em equipe, troca de experiências e responsabilidade.</p>
+            <p>Troca de experiências, responsabilidade e aprendizado em equipe.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-spark"></use></svg>
             <h3>Formação para liderança</h3>
             <p>Preparação para assumir desafios com clareza e maturidade.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-path"></use></svg>
             <h3>Aprendizado na prática</h3>
-            <p>Experiências reais transformam conhecimento em evolução.</p>
+            <p>Experiências orientadas ajudam a consolidar conhecimento.</p>
           </article>
           <article class="benefit-card reveal">
+            <svg class="card-icon"><use href="#icon-check"></use></svg>
             <h3>Construção de carreira</h3>
-            <p>Um caminho para quem deseja crescer com propósito e consistência.</p>
+            <p>Um caminho para crescer com propósito e consistência.</p>
           </article>
         </div>
       </section>
 
-      <section class="culture section">
-        <div class="culture__copy reveal">
-          <p class="eyebrow">Cultura da empresa</p>
+      <section class="section-shell culture">
+        <div class="section-copy reveal">
+          <span class="eyebrow">Cultura da empresa</span>
           <h2>Uma cultura voltada para evolução</h2>
           <p>
-            Na ASEX Educação, acreditamos que grandes profissionais são formados
-            com orientação, prática e oportunidade. Por isso, valorizamos pessoas
-            determinadas, responsáveis e dispostas a aprender todos os dias.
+            Valorizamos pessoas determinadas, responsáveis e dispostas a aprender
+            todos os dias. Na ASEX Educação, crescimento é resultado de
+            orientação, prática e compromisso.
           </p>
         </div>
         <div class="values reveal" aria-label="Valores da ASEX Educação">
@@ -312,9 +401,9 @@
         </div>
       </section>
 
-      <section class="career section" id="carreira">
-        <div class="career__panel reveal">
-          <p class="eyebrow">Carreira e crescimento</p>
+      <section class="section-shell career" id="carreira">
+        <div class="career__content reveal">
+          <span class="eyebrow">Carreira e crescimento</span>
           <h2>Mais do que uma oportunidade, uma jornada de crescimento</h2>
           <p>
             A ASEX Educação busca formar profissionais que possam crescer junto
@@ -324,37 +413,46 @@
           </p>
           <strong>Formamos pessoas hoje para liderarem amanhã.</strong>
         </div>
+        <a class="button button--secondary reveal" href="#processo">Ver etapas da jornada</a>
       </section>
 
-      <section class="final-cta" id="participar">
-        <div class="final-cta__inner reveal">
+      <section class="final-cta section-shell" id="participar">
+        <div class="final-cta__content reveal">
           <img
-            src="assets/asex-educacao-logo.png"
+            src="assets/asex-educacao-logo-horizontal.png"
             alt="ASEX Educação"
             class="final-cta__logo"
           />
-          <div>
-            <p class="eyebrow">Próximo passo</p>
-            <h2>Quer fazer parte dessa jornada?</h2>
-            <p>Entre no processo seletivo e conheça melhor a ASEX Educação.</p>
+          <span class="eyebrow">Próximo passo</span>
+          <h2>Quer fazer parte dessa jornada?</h2>
+          <p>Entre no processo seletivo e conheça melhor a ASEX Educação.</p>
+          <div class="final-cta__actions">
+            <a
+              class="button button--primary"
+              href="https://wa.me/5514998533026?text=Ol%C3%A1%2C%20quero%20participar%20do%20processo%20da%20ASEX%20Educa%C3%A7%C3%A3o."
+              target="_blank"
+              rel="noopener"
+            >
+              Quero participar
+            </a>
+            <a
+              class="button button--secondary"
+              href="https://wa.me/5514998533026"
+              target="_blank"
+              rel="noopener"
+            >
+              Falar pelo WhatsApp
+            </a>
           </div>
-          <a
-            class="button button--primary"
-            href="https://wa.me/5514998533026?text=Ol%C3%A1%2C%20quero%20participar%20do%20processo%20da%20ASEX%20Educa%C3%A7%C3%A3o."
-            target="_blank"
-            rel="noopener"
-          >
-            Quero participar
-          </a>
         </div>
       </section>
 
-      <section class="section contact" id="contato">
-        <div class="section__header reveal">
-          <p class="eyebrow">Contato</p>
-          <h2>Fale com a ASEX Educação</h2>
+      <section class="section-shell contact" id="contato">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Contato</span>
+          <h2>Canais oficiais da ASEX Educação</h2>
           <p>
-            Use os canais oficiais para receber informações sobre oportunidades,
+            Use os canais abaixo para receber informações sobre oportunidades,
             etapas e próximos encontros.
           </p>
         </div>
@@ -369,41 +467,68 @@
             <span>WhatsApp</span>
             <strong>Quero participar</strong>
           </a>
+          <a
+            class="contact-card reveal"
+            href="https://www.instagram.com/asexeducacao/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>Instagram</span>
+            <strong>@asexeducacao</strong>
+          </a>
           <a class="contact-card reveal" href="mailto:contato@asexeducacao.com">
             <span>E-mail</span>
             <strong>contato@asexeducacao.com</strong>
           </a>
-          <article class="contact-card reveal">
-            <span>Localização</span>
-            <strong>Atendimento conforme processo seletivo</strong>
-          </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="site-footer__brand">
-        <img
-          src="assets/asex-educacao-logo.png"
-          alt="ASEX Educação"
-          class="site-footer__logo"
-        />
-        <p>Formando profissionais. Desenvolvendo líderes. Construindo futuros.</p>
-      </div>
+      <div class="site-footer__main">
+        <div class="site-footer__brand">
+          <img
+            src="assets/asex-educacao-logo-horizontal.png"
+            alt="ASEX Educação"
+            class="site-footer__logo"
+          />
+          <p>Formando profissionais. Desenvolvendo líderes. Construindo futuros.</p>
+        </div>
 
-      <nav class="site-footer__links" aria-label="Links rápidos">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#formacao">Formação</a>
-        <a href="#carreira">Carreira</a>
-        <a href="#contato">Contato</a>
-      </nav>
+        <nav class="site-footer__links" aria-label="Links rápidos">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#formacao">Formação</a>
+          <a href="#carreira">Carreira</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="site-footer__contact" aria-label="Canais de contato">
+          <a
+            href="https://wa.me/5514998533026"
+            target="_blank"
+            rel="noopener"
+          >
+            WhatsApp
+          </a>
+          <a
+            href="https://www.instagram.com/asexeducacao/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
+          <a href="mailto:contato@asexeducacao.com">E-mail</a>
+        </div>
+      </div>
 
       <p class="site-footer__notice">
         As oportunidades, etapas e condições podem variar conforme o processo
         seletivo, disponibilidade e desenvolvimento de cada participante.
       </p>
-      <p class="site-footer__copy">© <span data-year></span> ASEX Educação. Todos os direitos reservados.</p>
+      <p class="site-footer__copy">
+        © <span data-year></span> ASEX Educação. Todos os direitos reservados.
+      </p>
     </footer>
   </body>
 </html>
